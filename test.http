@@ -1,0 +1,30 @@
+POST /users
+Host: localhost:8080
+Content-Type: application/json
+x-user-id: 10
+
+{
+  "id" : 1,
+  "email" : "digimon.1740@gmail.com",
+  "age" : 19
+}
+
+###
+
+PUT /users/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+x-user-id: 10
+
+{
+  "email" : "digimon@lezhin.com",
+  "age" : 19
+}
+
+###
+
+DELETE /users/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+x-user-id: 10
+###
